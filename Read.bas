@@ -1,5 +1,6 @@
 Attribute VB_Name = "Read"
-Function ParseCode(code As String) As LangType()
+Function ParseCode(Code As String) As Variant()
     Dim ParserInstance As New Parser
+    Call ParserInstance.Initialize(Code)
 End Function
 
